@@ -1,5 +1,5 @@
-window.onload = function(){ //To execute number 1 uncomment the code below Show Jamaica and the alert.
-    document.getElementById("lookup").onclick = function() {looking();};
+window.onload = function(){ //To execute number 1 uncomment the code below Show Jamaica and this code.
+   /* document.getElementById("lookup").onclick = function() {looking();};
     
         function looking(){
             var xxhttp = new XMLHttpRequest(); //Ajax request
@@ -9,7 +9,7 @@ window.onload = function(){ //To execute number 1 uncomment the code below Show 
             
             if (xxhttp.readyState === 4 && xxhttp.status === 200)
             {
-               //alert(xxhttp.responseText);
+               alert(xxhttp.responseText);
                document.getElementById("result").innerHTML = xxhttp.responseText;
     
             }
@@ -17,14 +17,14 @@ window.onload = function(){ //To execute number 1 uncomment the code below Show 
        };
         xxhttp.open("GET","world.php?country=" +c, true);
         xxhttp.send();
-    }
+    }*/
 
 
 
     
     
-    document.getElementById("all").onclick = function() {Every();};
-   // document.getElementById("lookup").onclick = function() {Every();};
+   
+    document.getElementById("lookup").onclick = function() {Every();};
     
      function Every(){
             //set up Ajax request

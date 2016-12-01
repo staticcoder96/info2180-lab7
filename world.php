@@ -10,16 +10,24 @@ $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password); //conn
 
 $stmt = $conn->query("SELECT * FROM countries");
 $want = $conn->query("SELECT * FROM countries WHERE name LIKE '%$coun%' ");//from your connection get information (query)
+$all = $conn->query("SELECT * FROM countries");
 
 
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $show = $want->fetchAll(PDO::FETCH_ASSOC);//gets information
+$every = $all->fetchAll(PDO::FETCH_ASSOC);
 
-echo '<ul>';
+foreach($every as $row) 
+  echo $row['name']. 'is ruled by' . $row['head_of_state']."<br/>";
+
+
+
+
+/*echo '<ul>';
 foreach ($results as $row) {
   echo '<li>' . $row['name'] . ' is ruled by ' . $row['head_of_state'] . '</li>';
 }
-echo '</ul>';
+echo '</ul>';*/
 
 //Shows only jamaica
 /*echo '<ul>';
