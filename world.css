@@ -1,0 +1,19 @@
+body{ 
+    background-color: green;
+    font-family: serif;
+    
+}
+
+#lookup{
+    color: red;
+    font-size: medium;
+}
+
+#all{
+    size: 20px;
+    font-size: large;
+}
+
+#result{
+    color: red;
+}
